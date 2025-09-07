@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/935/631/non_2x/abstract-colorful-random-circles-seamless-pattern-on-white-background-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+.iphone {
+    width: 320px;
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), -10px -10px 20px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-wrap {
+    width: 100%;
+}
+
+.answer-area {
+    width: 100%;
+    min-height: 70px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.click {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 0;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click:active {
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.4), inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+.click:hover{
+    color: rgb(0, 255, 255);
+    scale: 1.1;
+}
