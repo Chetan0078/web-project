@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+    padding: 50px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2),
+                -8px -8px 15px rgba(255, 255, 255, 0.7);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+input {
+    padding: 15px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: #E7F2EF;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 10px rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+                -5px -5px 15px rgba(255, 255, 255, 1);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 15px rgba(255,255,255,1);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.weather-info img {
+    margin-top: 10px;
+}
+
+/* Light mode */
+body.light-mode {
+    background: #E7F2EF;
+    color: #19183B;
+}
+
+body.light-mode .container {
+    background: #E7F2EF;
+}
+
+body.light-mode button {
+    background-color: #708993;
+    color: #19183B;
+}
+
+body.light-mode button:hover {
+    background-color: #A1C2BD;
+}
+
+body.light-mode input {
+    background: #E7F2EF;
+    color: #19183B;
+}
+
+body.light-mode .weather-info {
+    background: #A1C2BD;
+    color: #19183B;
+}
+
+/* dark mode */
+body.dark-mode {
+    background: #19183B;
+    color: #E7F2EF;
+}
+
+body.dark-mode .container {
+    background: #19183B;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7),
+                -8px -8px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode button {
+    background-color: #708993;
+    color: #E7F2EF;
+}
+
+body.dark-mode button:hover {
+    background-color: #A1C2BD;
+    color: #19183B;
+}
+
+body.dark-mode input {
+    background: #19183B;
+    color: #E7F2EF;
+}
+
+body.dark-mode .weather-info {
+    background: #708993;
+    color: #E7F2EF;
+}
